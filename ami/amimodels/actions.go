@@ -2345,6 +2345,35 @@ func (cli *Client) SendText(channel string, message string, opts ...RequestOptio
 	return res, cli.Action(req, res, opts...)
 }
 
+// SendTextAction Sends a text message to channel. A content type can be optionally specified. If not set
+// it is set to an empty string allowing a custom handler to default it as it sees fit.
+type SendInfoAction struct {
+	// ActionID ActionID for this transaction. Will be returned.
+	ActionID string
+	// Channel Channel to send message to.
+	Channel string
+	// Message Message to send.
+	Message string
+}
+
+func (SendInfoAction) ActionTypeName() string {
+	return "SendInfo"
+}
+func (a SendInfoAction) GetActionID() string {
+	return a.ActionID
+}
+func (a *SendInfoAction) SetActionID(actionID string) {
+	a.ActionID = actionID
+}
+func (cli *Client) SendInfo(channel string, message string, opts ...RequestOption) (res *Response, err error) {
+	req := &SendInfoAction{
+		Channel: channel,
+		Message: message,
+	}
+	res = &Response{}
+	return res, cli.Action(req, res, opts...)
+}
+
 // UserEventAction Send an arbitrary event.
 type UserEventAction struct {
 	// ActionID ActionID for this transaction. Will be returned.
