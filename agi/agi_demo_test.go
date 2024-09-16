@@ -1,6 +1,6 @@
 package agi_test
 
-import "github.com/wenerme/astgo/agi"
+import "github.com/yellowdotai/astgo-custom/agi"
 
 func ExampleRun() {
 	agi.Run(func(session *agi.Session) {

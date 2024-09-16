@@ -9,7 +9,7 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
-	"github.com/wenerme/astgo/ami/amimodels"
+	"github.com/yellowdotai/astgo-custom/ami/amimodels"
 )
 
 type MessageType string

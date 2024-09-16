@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/wenerme/astgo/ami/amimodels"
+	"github.com/yellowdotai/astgo-custom/ami/amimodels"
 )
 
 func TestMsgIO(t *testing.T) {

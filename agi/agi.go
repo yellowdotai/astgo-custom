@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/wenerme/astgo/agi/agimodels"
+	"github.com/yellowdotai/astgo-custom/agi/agimodels"
 	"go.uber.org/zap"
 )
 

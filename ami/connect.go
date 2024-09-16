@@ -11,7 +11,7 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 	"github.com/pkg/errors"
-	"github.com/wenerme/astgo/ami/amimodels"
+	"github.com/yellowdotai/astgo-custom/ami/amimodels"
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"
 )

@@ -3,7 +3,8 @@ package ami_test
 import (
 	"context"
 	"fmt"
-	"github.com/wenerme/astgo/ami"
+
+	"github.com/yellowdotai/astgo-custom/ami"
 )
 
 func ExampleConnect() {

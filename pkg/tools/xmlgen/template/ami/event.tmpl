@@ -1,4 +1,4 @@
-{{/* gotype: github.com/wenerme/astgo/pkg/tools/xmlgen.ManagerEvent*/}}
+{{/* gotype: github.com/yellowdotai/astgo-custom/pkg/tools/xmlgen.ManagerEvent*/}}
 {{- define "ami/event"}}
 {{with .Synopsis}} {{template "comment" (printf "%v %v" $.StructName .)}} {{end}}
 type {{.StructName}} struct {

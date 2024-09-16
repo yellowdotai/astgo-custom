@@ -12,7 +12,7 @@ import (
 
 	"github.com/iancoleman/strcase"
 	"github.com/stretchr/testify/assert"
-	"github.com/wenerme/astgo/pkg/tools/xmlgen"
+	"github.com/yellowdotai/astgo-custom/pkg/tools/xmlgen"
 )
 
 func TestEnumGen(t *testing.T) {
